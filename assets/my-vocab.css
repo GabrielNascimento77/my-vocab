@@ -1,0 +1,1511 @@
+.myvocab{
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:24px; /* Aumentado de 16px para 24px */
+  background:#fff;
+  padding:24px; /* Aumentado de 16px para 24px */
+  box-shadow:0 20px 40px rgba(0,0,0,.08); /* Sombra mais suave e profunda */
+  max-width: 1280px; /* Aumentado de 920px para 1280px */
+  margin: 0 auto; /* Centraliza na página */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.myvocab--locked{
+  padding:24px; /* Aumentado de 18px para 24px */
+  background:#fff7f7;
+  border-color: rgba(0,0,0,.12);
+  text-align: center;
+  font-size: 16px;
+}
+
+.myvocab__header{
+  display:flex;
+  gap:20px; /* Aumentado de 12px para 20px */
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:24px; /* Aumentado de 12px para 24px */
+  flex-wrap:wrap;
+}
+
+.myvocab__kicker{
+  font-size:14px; /* Aumentado de 12px para 14px */
+  opacity:.7;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  font-weight: 600;
+}
+
+.myvocab__title{
+  margin:0;
+  font-size:28px; /* Aumentado de 20px para 28px */
+  line-height:1.2;
+  font-weight: 900;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.myvocab__actions{
+  display:flex;
+  gap:12px; /* Aumentado de 8px para 12px */
+  flex-wrap:wrap;
+}
+
+.myvocab__btn{
+  border:1px solid rgba(0,0,0,.12);
+  background:#f7f7f7;
+  padding:10px 16px; /* Aumentado de 8px 10px para 10px 16px */
+  border-radius:14px; /* Aumentado de 12px para 14px */
+  cursor:pointer;
+  font-weight:700;
+  font-size:14px; /* Adicionado */
+  transition: all 0.2s ease;
+}
+
+.myvocab__btn:hover {
+  background: #eaeaea;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,.05);
+}
+
+.myvocab__btn.is-active{
+  background:#111;
+  color:#fff;
+  border-color:#111;
+}
+
+.myvocab__btn--primary{
+  border-radius: 16px; /* Aumentado de 14px para 16px */
+  font-weight: 900;
+  box-shadow: 0 14px 30px rgba(0,0,0,.10);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+}
+
+.myvocab__btn--primary:hover {
+  background: linear-gradient(135deg, #5a6fd6 0%, #6a3f9e 100%);
+  box-shadow: 0 16px 32px rgba(102, 126, 234, 0.3);
+}
+
+.myvocab__panel{
+  border-radius:20px; /* Aumentado de 14px para 20px */
+  background:linear-gradient(180deg, #fafafa, #ffffff);
+  border:1px solid rgba(0,0,0,.06);
+  padding:24px; /* Aumentado de 14px para 24px */
+  position:relative;
+}
+
+.myvocab__toolbar{
+  display:flex;
+  gap:15px; /* Aumentado de 10px para 15px */
+  flex-wrap:wrap;
+  margin-bottom:24px; /* Aumentado de 12px para 24px */
+  align-items: center;
+}
+
+.myvocab__input{
+  width: min(520px, 100%);
+  border:1px solid rgba(0,0,0,.12);
+  border-radius:14px; /* Aumentado de 12px para 14px */
+  padding:12px 16px; /* Aumentado de 10px 12px para 12px 16px */
+  outline:none;
+  background:#fff;
+  font-size:15px; /* Adicionado */
+  transition: all 0.2s ease;
+}
+
+.myvocab__input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.myvocab__textarea{
+  width: 100%;
+  border:1px solid rgba(0,0,0,.12);
+  border-radius:14px; /* Aumentado de 12px para 14px */
+  padding:12px 16px; /* Aumentado de 10px 12px para 12px 16px */
+  outline:none;
+  background:#fff;
+  resize: vertical;
+  font-size:15px; /* Adicionado */
+}
+
+.myvocab__list{
+  display:grid;
+  gap:15px; /* Aumentado de 10px para 15px */
+}
+
+.myvocab__item{
+  background:#fff;
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:18px; /* Aumentado de 14px para 18px */
+  padding:18px; /* Aumentado de 12px para 18px */
+  box-shadow:0 8px 18px rgba(0,0,0,.04);
+  transition: all 0.2s ease;
+}
+
+.myvocab__item:hover {
+  box-shadow: 0 12px 24px rgba(0,0,0,.08);
+  transform: translateY(-2px);
+}
+
+.myvocab__itemTop{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px; /* Aumentado de 10px para 15px */
+}
+
+.myvocab__word{
+  font-size:20px; /* Aumentado de 18px para 20px */
+  font-weight:900;
+  letter-spacing:-.01em;
+  color: #1a1a1a;
+}
+
+.myvocab__wordRow{
+  display:flex;
+  gap:12px; /* Aumentado de 8px para 12px */
+  align-items:baseline;
+  flex-wrap:wrap;
+}
+
+.myvocab__trans{
+  font-weight:800;
+  opacity:.75;
+  font-size:16px; /* Adicionado */
+  color: #666;
+}
+
+.myvocab__badge{
+  display:inline-block;
+  margin-top:8px; /* Aumentado de 6px para 8px */
+  font-size:12px;
+  font-weight:800;
+  padding:6px 12px; /* Aumentado de 6px 10px para 6px 12px */
+  border-radius:999px;
+  background:#f0f0f0;
+  border:1px solid rgba(0,0,0,.10);
+  color: #555;
+}
+
+.myvocab__itemBtns{
+  display:flex;
+  gap:10px; /* Aumentado de 8px para 10px */
+}
+
+.myvocab__iconBtn{
+  border:1px solid rgba(0,0,0,.12);
+  background:#f8f8f8;
+  border-radius:12px;
+  padding:10px 14px; /* Aumentado de 8px 10px para 10px 14px */
+  cursor:pointer;
+  font-weight:800;
+  transition: all 0.2s ease;
+}
+
+.myvocab__iconBtn:hover {
+  background: #eaeaea;
+  transform: scale(1.05);
+}
+
+.myvocab__iconBtn--danger{
+  background:#fff1f1;
+  color: #d32f2f;
+}
+
+.myvocab__iconBtn--danger:hover {
+  background: #ffe5e5;
+}
+
+.myvocab__def{
+  margin-top:10px; /* Aumentado de 6px para 10px */
+  font-size:15px; /* Aumentado de 14px para 15px */
+  line-height:1.5;
+  opacity:.9;
+  color: #444;
+}
+
+.myvocab__ex{
+  margin-top:8px; /* Aumentado de 6px para 8px */
+  font-size:14px; /* Aumentado de 13px para 14px */
+  opacity:.8;
+  font-style: italic;
+  color: #666;
+  padding-left: 12px;
+  border-left: 3px solid #667eea;
+}
+
+.myvocab__empty{
+  padding:24px; /* Aumentado de 14px para 24px */
+  border-radius:16px; /* Aumentado de 14px para 16px */
+  background:#fff;
+  border:1px dashed rgba(0,0,0,.18);
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+}
+
+.myvocab__card{
+  background:#fff;
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:20px; /* Aumentado de 16px para 20px */
+  padding:18px; /* Aumentado de 14px para 18px */
+  box-shadow:0 8px 18px rgba(0,0,0,.04);
+}
+
+.myvocab__cardTitle{
+  font-weight:900;
+  font-size:18px; /* Aumentado de 16px para 18px */
+  margin-bottom:8px; /* Aumentado de 6px para 8px */
+}
+
+.myvocab__muted{
+  font-size:13px; /* Aumentado de 12px para 13px */
+  opacity:.75;
+}
+
+.myvocab__row{
+  display:flex;
+  gap:12px; /* Aumentado de 10px para 12px */
+  align-items:center;
+  flex-wrap:wrap;
+  margin-top:12px; /* Aumentado de 10px para 12px */
+}
+
+.myvocab__row--between{
+  justify-content:space-between;
+}
+
+.myvocab__label{
+  display:block;
+  font-size:13px; /* Aumentado de 12px para 13px */
+  font-weight:800;
+  opacity:.75;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  margin:12px 0 8px; /* Aumentado de 10px 0 6px para 12px 0 8px */
+}
+
+.myvocab__toast{
+  position:absolute;
+  left:20px; /* Aumentado de 14px para 20px */
+  right:20px; /* Aumentado de 14px para 20px */
+  top:20px; /* Aumentado de 14px para 20px */
+  background:#111;
+  color:#fff;
+  padding:14px 18px; /* Aumentado de 10px 12px para 14px 18px */
+  border-radius:16px; /* Aumentado de 12px para 16px */
+  font-weight:800;
+  box-shadow:0 15px 35px rgba(0,0,0,.2);
+  transform: translateY(-8px);
+  opacity:0;
+  transition: all .2s ease;
+  z-index: 100;
+}
+
+.myvocab__toast.is-show{
+  transform: translateY(0);
+  opacity:1;
+}
+
+/* Modal */
+.myvocab__modal{
+  position:fixed;
+  inset:0;
+  z-index:99999;
+  overflow-y: auto; /* Permite scroll no modal */
+  -webkit-overflow-scrolling: touch; /* Scroll suave no iOS */
+}
+
+.myvocab__modalBackdrop{
+  position:fixed; /* Mudado de absolute para fixed */
+  inset:0;
+  background: rgba(0,0,0,.45);
+}
+
+.myvocab__modalBox{
+  position:relative;
+  margin: min(5vh, 40px) auto min(5vh, 40px); /* Margem em cima e embaixo */
+  width: min(700px, calc(100% - 32px));
+  background:#fff;
+  border-radius:24px;
+  border:1px solid rgba(0,0,0,.12);
+  box-shadow:0 30px 70px rgba(0,0,0,.3);
+  overflow: visible; /* Mudado de hidden para visible */
+}
+
+.myvocab__modalHeader{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+  padding:20px 24px;
+  border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.myvocab__modalTitle{
+  font-weight:900;
+  font-size:20px; /* Aumentado de 16px para 20px */
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.myvocab__modalBody{
+  padding:24px;
+  max-height: 60vh; /* Altura máxima para o conteúdo */
+  overflow-y: auto; /* Scroll no corpo do modal se necessário */
+  -webkit-overflow-scrolling: touch;
+}
+
+.myvocab__modalFooter{
+  display:flex;
+  gap:12px;
+  justify-content:flex-end;
+  padding:16px 24px 24px;
+  border-top:1px solid rgba(0,0,0,.08);
+  background: #fff; /* Garante fundo branco */
+  position: sticky; /* Fixa o footer no fundo */
+  bottom: 0;
+  z-index: 2;
+}
+
+/* Flashcards */
+.myvocab__flashCard{
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:24px; /* Aumentado de 16px para 24px */
+  padding:24px; /* Aumentado de 14px para 24px */
+  box-shadow:0 15px 30px rgba(0,0,0,.08);
+  background: linear-gradient(135deg, #ffffff, #fafafa);
+}
+
+.myvocab__flashTop{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px; /* Aumentado de 10px para 15px */
+  margin-bottom:12px; /* Aumentado de 8px para 12px */
+}
+
+.myvocab__flashWord{
+  font-size:42px; /* Aumentado de 26px para 42px */
+  font-weight:950;
+  letter-spacing:-.02em;
+  background: linear-gradient(135deg, #1a1a1a, #4a4a4a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+}
+
+.myvocab__flashBlock{
+  margin-top:15px; /* Aumentado de 10px para 15px */
+  padding-top:12px; /* Aumentado de 10px para 12px */
+  border-top:1px solid rgba(0,0,0,.06);
+}
+
+.myvocab__flashNav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px; /* Aumentado de 10px para 15px */
+  margin-top:18px; /* Aumentado de 12px para 18px */
+}
+
+.myvocab__skeleton{
+  padding:24px; /* Aumentado de 14px para 24px */
+  border-radius:16px; /* Aumentado de 14px para 16px */
+  background:#fff;
+  border:1px dashed rgba(0,0,0,.18);
+}
+
+/* Layout com aside - VERSÃO DESKTOP MELHORADA */
+.myvocab{
+  display:grid;
+  grid-template-columns: 300px 1fr; /* Aside mais largo: 260px -> 300px */
+  gap:24px; /* Aumentado de 14px para 24px */
+  align-items:stretch;
+}
+
+.myvocab__aside{
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:20px; /* Aumentado de 16px para 20px */
+  background:#fff;
+  padding:24px; /* Aumentado de 14px para 24px */
+  box-shadow:0 15px 30px rgba(0,0,0,.06);
+  position:sticky;
+  top:90px; /* Aumentado de 12px para 24px */
+  height: fit-content;
+}
+
+.myvocab__brand{
+  margin-bottom:24px; /* Aumentado de 12px para 24px */
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+
+.myvocab__nav{
+  display:flex;
+  flex-direction:column;
+  gap:10px; /* Aumentado de 8px para 10px */
+  margin-top:16px; /* Aumentado de 10px para 16px */
+}
+
+.myvocab__navBtn{
+  text-align:left;
+  border:1px solid rgba(0,0,0,.12);
+  background:#f7f7f7;
+  padding:14px 18px; /* Aumentado de 10px 12px para 14px 18px */
+  border-radius:14px; /* Aumentado de 12px para 14px */
+  cursor:pointer;
+  font-weight:800;
+  font-size:16px; /* Adicionado */
+  transition: all 0.2s ease;
+  color: #0a2540;
+}
+
+.myvocab__navBtn:hover {
+  background: #eaeaea;
+  transform: translateX(4px);
+  color: #f97316;
+}
+
+.myvocab__navBtn.is-active{
+  background: #0a2540;
+  color:#fff;
+  border-color:#111;
+}
+
+.myvocab__asideFooter{
+  margin-top:24px; /* Aumentado de 14px para 24px */
+  padding-top:20px; /* Aumentado de 12px para 20px */
+  border-top:1px solid rgba(0,0,0,.08);
+  font-size:14px;
+  color: #666;
+}
+
+.myvocab__main{
+  min-width:0;
+}
+
+/* Select */
+.myvocab__select{
+  border:1px solid rgba(0,0,0,.12);
+  border-radius:14px; /* Aumentado de 12px para 14px */
+  padding:12px 16px; /* Aumentado de 10px 12px para 12px 16px */
+  background:#fff;
+  font-size:14px;
+  cursor: pointer;
+}
+
+/* Categoria list */
+.myvocab__catList{
+  display:grid;
+  gap:12px; /* Aumentado de 10px para 12px */
+  margin-top:16px; /* Aumentado de 12px para 16px */
+}
+
+.myvocab__catRow{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px; /* Aumentado de 10px para 12px */
+  background:#fff;
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:16px; /* Aumentado de 14px para 16px */
+  padding:14px; /* Aumentado de 12px para 14px */
+  box-shadow:0 8px 18px rgba(0,0,0,.04);
+}
+
+.myvocab__catName{
+  font-weight:900;
+  font-size:16px; /* Adicionado */
+}
+
+.myvocab__catBtns{
+  display:flex;
+  gap:10px; /* Aumentado de 8px para 10px */
+}
+
+/* Badge + word row */
+.myvocab__wordRow{
+  display:flex;
+  gap:12px; /* Aumentado de 8px para 12px */
+  align-items:baseline;
+  flex-wrap:wrap;
+}
+
+.myvocab__trans{
+  font-weight:800;
+  opacity:.75;
+  font-size:16px;
+  color: #666;
+}
+
+.myvocab__badge{
+  display:inline-block;
+  margin-top:8px;
+  font-size:12px;
+  font-weight:800;
+  padding:6px 12px;
+  border-radius:999px;
+  background:#f0f0f0;
+  border:1px solid rgba(0,0,0,.10);
+  color: #555;
+}
+
+/* Responsivo: aside vira topo */
+@media (max-width: 1100px){
+  .myvocab{
+    max-width: 95%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 860px){
+  .myvocab{
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    padding: 16px;
+  }
+  .myvocab__aside{
+    position:relative;
+    top:auto;
+  }
+  .myvocab__nav{
+    flex-direction:row;
+    flex-wrap:wrap;
+  }
+  .myvocab__navBtn{
+    text-align:center;
+    flex: 1;
+  }
+}
+
+.myvocab__importBlock{
+  margin-top:16px; /* Aumentado de 12px para 16px */
+  padding-top:16px; /* Aumentado de 12px para 16px */
+  border-top:1px solid rgba(0,0,0,.08);
+}
+
+.myvocab__dupRow{
+  display:flex;
+  gap:12px; /* Aumentado de 10px para 12px */
+  align-items:center;
+  justify-content:space-between;
+  padding:12px; /* Aumentado de 10px para 12px */
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:14px; /* Aumentado de 12px para 14px */
+  background:#fff;
+  margin-top:10px; /* Aumentado de 8px para 10px */
+}
+
+.myvocab__tableWrap{
+  overflow:auto;
+  margin-top:15px; /* Aumentado de 10px para 15px */
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:14px; /* Aumentado de 12px para 14px */
+  background:#fff;
+}
+
+.myvocab__table{
+  width:100%;
+  border-collapse:collapse;
+  min-width: 780px;
+}
+
+.myvocab__table th,
+.myvocab__table td{
+  padding:12px; /* Aumentado de 10px para 12px */
+  border-bottom:1px solid rgba(0,0,0,.06);
+  text-align:left;
+  vertical-align:top;
+  font-size:14px; /* Aumentado de 13px para 14px */
+}
+
+.myvocab__table thead th{
+  font-size:13px; /* Aumentado de 12px para 13px */
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  opacity:.8;
+}
+
+.myvocab__table tr.is-dup{
+  background:#fff7e8;
+}
+
+/* Stats cards */
+.myvocab__stats{
+  display:grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap:15px; /* Aumentado de 10px para 15px */
+  margin-top:20px; /* Aumentado de 12px para 20px */
+}
+
+.myvocab__stat{
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:16px; /* Aumentado de 14px para 16px */
+  padding:16px; /* Aumentado de 10px para 16px */
+  background:#fff;
+  box-shadow:0 8px 18px rgba(0,0,0,.04);
+  text-align: center;
+}
+
+.myvocab__stat strong {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.myvocab__stat div {
+  font-size: 28px;
+  font-weight: 900;
+  color: #1a1a1a;
+}
+
+.myvocab__game{
+  margin-top:18px; /* Aumentado de 14px para 18px */
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:20px; /* Aumentado de 16px para 20px */
+  padding:18px; /* Aumentado de 14px para 18px */
+  background:#fff;
+}
+
+.myvocab__gameTop{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px; /* Aumentado de 12px para 15px */
+  margin-bottom:15px; /* Aumentado de 12px para 15px */
+}
+
+.myvocab__gameWord{
+  font-size:24px; /* Aumentado de 22px para 24px */
+  font-weight:900;
+}
+
+.myvocab__gameOptions{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap:12px; /* Aumentado de 10px para 12px */
+}
+
+@media (max-width: 680px){
+
+    .myvocab__item {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.04);
+    margin-bottom: 12px; /* Espaço entre cards */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .myvocab__item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .myvocab__item:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0,0,0,.08);
+  }
+
+  /* Remove o layout antigo do mobile */
+  .myvocab__itemTop {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  /* Palavra no topo */
+  .myvocab__word {
+    font-size: 22px;
+    font-weight: 900;
+    width: 100%;
+    margin-bottom: 2px;
+    line-height: 1.3;
+    color: #1a1a1a;
+  }
+
+  /* Tradução abaixo da palavra */
+  .myvocab__trans {
+    font-size: 16px;
+    font-weight: 600;
+    color: #667eea;
+    opacity: 1;
+    margin-bottom: 4px;
+    padding-bottom: 0;
+    border-bottom: none;
+    width: 100%;
+  }
+
+  /* Categoria como badge */
+  .myvocab__badge {
+    margin: 0 0 8px 0;
+    padding: 4px 10px;
+    font-size: 11px;
+    background: #f5f5f5;
+    border: none;
+  }
+
+  /* Definição */
+  .myvocab__def {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    width: 100%;
+  }
+
+  /* Exemplo - ANTES DOS BOTÕES */
+  .myvocab__ex {
+    margin: 0 0 12px 0;
+    padding: 10px 12px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 3px solid #667eea;
+    font-size: 13px;
+    width: 100%;
+  }
+
+  /* Botões no final - DEPOIS DO EXEMPLO */
+  .myvocab__itemBtns {
+    margin: 4px 0 0 0;
+    padding: 8px 0 0 0;
+    border-top: 1px solid rgba(0,0,0,.06);
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+  }
+
+  .myvocab__iconBtn {
+    flex: 1;
+    padding: 10px 6px;
+    font-size: 13px;
+    border-radius: 25px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    background: #f5f5f5;
+    border: none;
+    font-weight: 600;
+    color: #333;
+    min-width: 0; /* Permite que os botões encolham */
+  }
+  
+  
+  .myvocab__iconBtn:first-child {
+    background: #667eea;
+    color: white;
+  }
+  
+  .myvocab__iconBtn--danger {
+    background: #ffe8e8;
+    color: #d32f2f;
+  }
+  
+  .myvocab__iconBtn span {
+    display: inline-block;
+  }
+  
+  .myvocab__stats{ 
+    grid-template-columns: repeat(2, minmax(0,1fr)); 
+  }
+  
+  .myvocab__gameOptions{ 
+    grid-template-columns: 1fr; 
+  }
+  
+  .myvocab__modalBox {
+    margin: 10px auto;
+    width: calc(100% - 20px);
+  }
+  
+  .myvocab__modalBody {
+    max-height: 50vh; /* Menor altura em mobile */
+    padding: 16px;
+  }
+  
+  .myvocab__modalFooter {
+    padding: 16px;
+    flex-direction: column-reverse; /* Botões em coluna no mobile */
+  }
+  
+  .myvocab__modalFooter .myvocab__btn {
+    width: 100%; /* Botões ocupam toda largura */
+    margin: 5px 0;
+  }
+  
+  .myvocab__modalHeader {
+    padding: 16px;
+  }
+  
+  .myvocab__modalTitle {
+    font-size: 18px;
+  }
+  
+   /* ===== GAMES SECTION ===== */
+  .myvocab__gamesGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  .myvocab__gameCard {
+    width: 100%;
+    padding: 16px;
+    border-radius: 16px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.06);
+    box-shadow: 0 4px 12px rgba(0,0,0,.04);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    text-align: left;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .myvocab__gameCard.is-disabled {
+    opacity: 0.55;
+    background: #f2f4f7;
+    cursor: not-allowed;
+  }
+
+  .myvocab__gameIcon {
+    font-size: 36px;
+    margin-bottom: 0;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+    flex-shrink: 0; /* Evita que o ícone encolha */
+    width: 44px;
+    text-align: center;
+  }
+
+  .myvocab__gameContent {
+    flex: 1;
+    min-width: 0; /* Permite que o texto quebre */
+  }
+
+  .myvocab__gameName {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 4px;
+    background: none;
+    -webkit-text-fill-color: #1a1a1a;
+    color: #1a1a1a;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  .myvocab__gameDesc {
+    font-size: 13px;
+    opacity: 0.7;
+    margin: 0;
+    line-height: 1.4;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  
+   /* Ajustes para o cabeçalho da seção */
+  .myvocab__card[data-role="gamesRoot"] {
+    padding: 16px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .myvocab__card[data-role="gamesRoot"] .myvocab__row--between {
+    margin-bottom: 8px;
+  }
+
+  .myvocab__card[data-role="gamesRoot"] .myvocab__cardTitle {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+
+  .myvocab__card[data-role="gamesRoot"] .myvocab__muted {
+    font-size: 13px;
+  }
+}
+
+  /* Score bar mais compacta */
+  .myvocab__scoreBar {
+    margin: 12px 0;
+    padding: 12px;
+    gap: 8px;
+    border-radius: 14px;
+  }
+
+  .myvocab__pill {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  /* Headers mais compactos */
+  .myvocab__listenHead {
+    padding: 14px;
+    margin-top: 12px;
+    border-radius: 14px;
+  }
+
+  .myvocab__listenTitle {
+    font-size: 20px;
+  }
+
+  /* Game options mais compactas */
+  .myvocab__gameOptions {
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .myvocab__btn--choice {
+    padding: 14px 10px;
+    font-size: 15px;
+  }
+
+  /* End screen mais compacta */
+  .myvocab__end {
+    padding: 20px;
+  }
+
+  .myvocab__endTitle {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .myvocab__endStats {
+    gap: 8px;
+  }
+
+  .myvocab__endStats .myvocab__pill {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 480px){
+    
+    .myvocab__word {
+    font-size: 22px; /* Ainda menor em telas muito pequenas */
+  }
+  
+  .myvocab__modalBody {
+    max-height: 40vh;
+    padding: 12px;
+  }
+  
+  .myvocab__trans {
+    font-size: 16px;
+  }
+  
+  .myvocab__def {
+    font-size: 14px;
+  }
+  
+  .myvocab__ex {
+    font-size: 13px;
+    padding: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .myvocab__iconBtn {
+    padding: 10px 6px;
+    font-size: 12px;
+  }
+  
+  .myvocab__iconBtn {
+    padding: 10px 6px;
+    font-size: 13px;
+  }
+  
+  .myvocab__modalFooter {
+    padding: 12px;
+  }
+  
+   .myvocab__gameCard {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .myvocab__gameIcon {
+    font-size: 30px;
+    width: 40px;
+  }
+
+  .myvocab__gameName {
+    font-size: 16px;
+  }
+
+  .myvocab__gameDesc {
+    font-size: 12px;
+  }
+}
+
+
+/* Games grid */
+.myvocab__gamesGrid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap:24px; /* Aumentado de 18px para 24px */
+  margin-top:24px; /* Aumentado de 16px para 24px */
+}
+
+.myvocab__gameCard{
+  background: linear-gradient(180deg, #f8faff 0%, #ffffff 100%);
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 24px; /* Aumentado de 20px para 24px */
+  box-shadow: 0 18px 40px rgba(0,0,0,.06);
+  padding: 24px; /* Adicionado */
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.myvocab__gameCard:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px rgba(102, 126, 234, 0.15);
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+.myvocab__gameCard.is-disabled{
+  opacity:.55;
+  background:#f2f4f7;
+  cursor:not-allowed;
+  transform: none;
+}
+
+.myvocab__gameIcon{
+  font-size: 48px;
+  margin-bottom: 16px;
+  filter: drop-shadow(0 8px 12px rgba(0,0,0,0.1));
+}
+
+.myvocab__gameName{
+  font-weight: 900;
+  font-size: 22px;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #333, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.myvocab__gameDesc{
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+/* Score bar melhorada */
+.myvocab__scoreBar{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px; /* Aumentado de 10px para 15px */
+  margin:20px 0; /* Aumentado de 14px 0 para 20px 0 */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 18px; /* Aumentado de 16px para 18px */
+  padding: 18px; /* Aumentado de 15px para 18px */
+  color: white;
+  box-shadow: 0 12px 24px rgba(102, 126, 234, 0.2);
+}
+
+.myvocab__pill{
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:999px;
+  padding:10px 16px; /* Aumentado de 8px 12px para 10px 16px */
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(5px);
+  font-size:14px; /* Aumentado de 13px para 14px */
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.myvocab__listenHead{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px; /* Aumentado de 12px para 15px */
+  padding:18px; /* Aumentado de 14px para 18px */
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:18px; /* Aumentado de 16px para 18px */
+  background: linear-gradient(135deg, #f5f7fa 0%, #e9ecf2 100%);
+  margin-top:18px; /* Aumentado de 14px para 18px */
+  box-shadow: 0 8px 16px rgba(0,0,0,.05);
+}
+
+.myvocab__listenTitle{
+  font-weight:900;
+  font-size:24px; /* Aumentado de 18px para 24px */
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.myvocab__gameBox{
+  margin-top:18px; /* Aumentado de 12px para 18px */
+}
+
+.myvocab__btn--choice{
+  width:100%;
+  justify-content:center;
+  font-weight:900;
+  padding:16px 16px; /* Aumentado de 14px 14px para 16px 16px */
+  border-radius:16px; /* Aumentado de 14px para 16px */
+  background:#fff;
+  border:1px solid rgba(0,0,0,.10);
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  font-size:16px; /* Adicionado */
+}
+
+.myvocab__btn--choice:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px rgba(0,0,0,.08);
+}
+
+.myvocab__btn--choice:active{
+  transform: translateY(0);
+}
+
+.myvocab__reward{
+  margin-top:15px; /* Aumentado de 12px para 15px */
+  padding:14px 16px; /* Aumentado de 12px 14px para 14px 16px */
+  background:#f6f7f8;
+  border:1px solid rgba(0,0,0,.08);
+  font-weight:700;
+  border-radius: 18px; /* Aumentado de 16px para 18px */
+  box-shadow: 0 12px 24px rgba(0,0,0,.05);
+  animation: rewardPop 0.3s ease;
+}
+
+@keyframes rewardPop {
+  0% { transform: scale(0.95); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.myvocab__reward.is-good{
+  background:#ecfff3;
+  border-color: rgba(0,160,80,.18);
+  color: #0a5c2e;
+}
+
+.myvocab__reward.is-bad{
+  background:#fff0f0;
+  border-color: rgba(200,0,0,.15);
+  color: #8b1e1e;
+}
+
+.myvocab__reveal{
+  margin-top:15px; /* Aumentado de 10px para 15px */
+  padding:14px 16px; /* Aumentado de 10px 12px para 14px 16px */
+  border-radius:16px; /* Aumentado de 14px para 16px */
+  background:#fff;
+  border:1px dashed rgba(0,0,0,.18);
+  animation: fadeIn 0.3s ease;
+  font-size:15px; /* Adicionado */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.myvocab__endTitle{
+  font-size:32px; /* Aumentado de 20px para 32px */
+  font-weight:900;
+  margin-top:20px; /* Aumentado de 14px para 20px */
+}
+
+.myvocab__endStats{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px; /* Aumentado de 10px para 15px */
+  margin-top:15px; /* Aumentado de 10px para 15px */
+  justify-content: center;
+}
+
+.myvocab__endStats .myvocab__pill {
+  background: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* ========== ESTILOS DOS GAMES ========== */
+
+/* Esconder controles durante o jogo */
+.myvocab__gameView .myvocab__row:first-child,
+.myvocab__writeGameView .myvocab__row:first-child,
+.myvocab__speakGameView .myvocab__row:first-child {
+  transition: opacity 0.3s ease;
+}
+
+/* Botão Next */
+.myvocab__btn--next {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.myvocab__btn--next:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.myvocab__btn--next:active {
+  transform: scale(0.95);
+}
+
+/* Speak Game */
+.myvocab__speakHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px; /* Aumentado de 20px para 24px */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 18px; /* Aumentado de 16px para 18px */
+  color: white;
+  margin-bottom: 24px; /* Aumentado de 20px para 24px */
+}
+
+.myvocab__speakWord {
+  font-size: 56px; /* Aumentado de 48px para 56px */
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  text-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.myvocab__speakArea {
+  background: #f8f9fa;
+  border-radius: 18px; /* Aumentado de 16px para 18px */
+  padding: 40px; /* Aumentado de 30px para 40px */
+  text-align: center;
+  border: 2px dashed #dee2e6;
+}
+
+.myvocab__btn--record {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 18px 36px; /* Aumentado de 15px 30px para 18px 36px */
+  font-size: 20px; /* Aumentado de 18px para 20px */
+  border-radius: 60px; /* Aumentado de 50px para 60px */
+  transition: all 0.3s ease;
+}
+
+.myvocab__btn--record:hover {
+  transform: scale(1.05);
+  background: #ff5252;
+  box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+}
+
+.myvocab__btn--record.is-recording {
+  background: #f03e3e;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); background-color: #c92a2a; }
+  100% { transform: scale(1); }
+}
+
+.myvocab__btn--record.is-recording::before {
+  content: "⏺️ ";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/* Efeito de XP flutuante */
+.myvocab__xpFloat {
+  position: fixed;
+  pointer-events: none;
+  font-weight: 900;
+  font-size: 28px; /* Aumentado de 24px para 28px */
+  color: #ffb347;
+  text-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  animation: floatUp 1.5s ease-out forwards;
+  z-index: 9999;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateY(-40px) scale(1.3); /* Ajustado */
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-80px) scale(0.8); /* Ajustado */
+  }
+}
+
+/* Botão de áudio */
+.myvocab__btn--primary[data-action="gameTts"],
+.myvocab__btn--primary[data-action="writeGameTts"],
+.myvocab__btn--primary[data-action="speakPlay"] {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 14px 28px; /* Aumentado de 12px 24px para 14px 28px */
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.myvocab__btn--primary[data-action="gameTts"]:hover,
+.myvocab__btn--primary[data-action="writeGameTts"]:hover,
+.myvocab__btn--primary[data-action="speakPlay"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(102, 126, 234, 0.4);
+}
+
+/* Animação de acerto/erro */
+.myvocab__gameBox.correct-answer {
+  animation: correctPulse 0.5s ease;
+}
+
+.myvocab__gameBox.wrong-answer {
+  animation: wrongShake 0.3s ease;
+}
+
+@keyframes correctPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); background-color: rgba(76, 175, 80, 0.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes wrongShake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* Estilo para opções selecionadas */
+.myvocab__btn--choice.selected-correct {
+  background: #4caf50 !important;
+  color: white !important;
+  border-color: #388e3c !important;
+  transform: scale(1.02);
+}
+
+.myvocab__btn--choice.selected-wrong {
+  background: #f44336 !important;
+  color: white !important;
+  border-color: #d32f2f !important;
+}
+
+.myvocab__btn--choice:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Progress bar */
+.myvocab__gameProgress {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 14px;
+}
+
+.myvocab__progressBar {
+  flex: 1;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.myvocab__progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50, #8bc34a);
+  transition: width 0.3s ease;
+  border-radius: 4px;
+}
+
+/* Feedback de XP na resposta */
+.myvocab__reward.is-good {
+  position: relative;
+  overflow: hidden;
+}
+
+.myvocab__reward.is-good::before {
+  content: '+10 XP';
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffd700;
+  color: #333;
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 900;
+  animation: xpBadgePop 0.3s ease;
+}
+
+@keyframes xpBadgePop {
+  0% { transform: translateY(-50%) scale(0); }
+  80% { transform: translateY(-50%) scale(1.1); }
+  100% { transform: translateY(-50%) scale(1); }
+}
+
+/* Responsivo final */
+@media (max-width: 760px){
+  .myvocab__gamesGrid{ 
+    grid-template-columns: 1fr; 
+  }
+  .myvocab__gameOptions{ 
+    grid-template-columns: 1fr; 
+  }
+  .myvocab__speakWord {
+    font-size: 36px;
+  }
+  .myvocab__speakArea {
+    padding: 20px;
+  }
+}
+
+/* Controle de visibilidade desktop/mobile */
+.desktop-only {
+  display: flex;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 680px) {
+  .desktop-only {
+    display: none;
+  }
+  
+  .mobile-only {
+    display: flex;
+    margin-top: 16px;
+  }
+}
